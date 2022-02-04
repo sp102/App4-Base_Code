@@ -31,24 +31,39 @@ blah, blah, blah, blah
       <link rel="stylesheet" href="w3-colors-flat.css">	   
    </head> 
 
+<!-- content is sectioned off by <> and </> for title, script, etc. -->
+<!-- sets up HTML tag to show file type -->
+<!-- title brackets separate out title; title is Hello World -->
+<!-- href links to another page and/or IDs other parts of pg -->
 	
    <script>
         var pregnancy_count = 0;
         var PMS_count = 0;
         
+<!-- "var" with condition declares variable; 0 initializes var -->
+<!-- two diff lines distinguish diff factors/variables being compared -->
 	   
         function pregnancyAdd(){
 		pregnancy_count = pregnancy_count + 1;
 			alert(pregnancy_count);
 	}
 	   
+<!-- Added pregnancy count + 1 to increase pregnancy-linked responses if button is clicked -->
+<!-- "count" adds up amount of responses entered -->
+	   
 	function PMSAdd(){
 		PMS_count = PMS_count + 1;
 			alert(PMS_count);	
 	}
+	  
+<!-- Added cold count + 1 to increase PMS-linked responses if button is clicked -->
 	   
    </script>
 	
+<!-- Outputs results on final page to show score percentages of pregnancy and PMS -->
+<!-- Added var total to calc total count; + means printing out a variable -->
+<!-- Shows two probabilities (pregnancy and PMS); <br> used as line break to split percentages -->
+<!-- "getElementByID" has "results" in parenthesis to ID pg to go to for answer results -->
 	
    <style>
    	.body {
@@ -65,7 +80,10 @@ blah, blah, blah, blah
     		z-index: 0;
     		background-color: hsl(20,100%,27%);
 	   }
-
+	   
+<!-- style adjusts visuals of page (dimensions, color, etc) -->
+<!-- background color hsl (hue saturation lightness) adjusts color by %; see w3 pg for options -->
+	   
   	.page:target {
     	        left: 0vw;
     		z-index: 1;
@@ -77,6 +95,9 @@ blah, blah, blah, blah
 	<div id="header" class="w3-container w3-flat-carrot">
 	<h1>Pregnancy or PMS?</h1>
 		
+<!-- "header" shows what is at top of page; aligns with head code -->
+<!-- <h1> brackets indicates that words between are title -->
+		
 	</div>
 
    <div id="content" class="w3-container">
@@ -87,5 +108,9 @@ blah, blah, blah, blah
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	   
+<!-- p in brackets shows text that shows up on pg -->
+<!-- "class=" indicates button; "w3-___" indicates feature of button (shape, color, size, etc.) -->
+<!-- words following button descriptions shows what is on button -->
 
 </html>
