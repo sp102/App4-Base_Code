@@ -113,7 +113,7 @@ blah, blah, blah, blah
 <!-- words following button descriptions shows what is on button -->
 
 	   
-	   <div class="page" id="one">
+<div class="page" id="one">
 
 <!-- "div class" sections off first page; content following is only on first page -->
 
@@ -131,5 +131,25 @@ blah, blah, blah, blah
 <!-- First question typed between <p> brackets to show up on pg -->
 <!-- onclick focuses attention on when button is clicked and does command written (allergyadd in this case -->
 <!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease/condition -->
+
+		</div><!-- /content -->
+</div>
+	
+
+<div class="page" id="two">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Are you experiencing nausea?</p>
+		
+	<a href="#three"  onclick="pregnancyAdd();" class="w3-btn w3-black"> Yes</a>
+		
+        <a href="#three"  onclick="PMSAdd();" class="w3-btn w3-black">No</a>
+		
+<!-- id= changes from one to two bc diff page -->
+<!-- href changes to correspond to coming page (going from 2 to 3 so says 3) -->
+<!-- must add href to each button bc navigates to diff pg -->
 		
 </html>
