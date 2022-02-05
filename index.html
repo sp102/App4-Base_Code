@@ -45,7 +45,7 @@ blah, blah, blah, blah
 	   
         function pregnancyAdd(){
 		pregnancy_count = pregnancy_count + 1;
-			alert(pregnancy_count);
+			alert("pregnancy count: " + pregnancy_count); 
 	}
 	   
 // Added pregnancy count + 1 to increase pregnancy-linked responses if button is clicked
@@ -53,10 +53,17 @@ blah, blah, blah, blah
 	   
 	function PMSAdd(){
 		PMS_count = PMS_count + 1;
-			alert(PMS_count);	
+			alert("PMS count: " + PMS_count);	
 	}
-	  
-// Added cold count + 1 to increase PMS-linked responses if button is clicked
+
+// Added pms count + 1 to increase PMS-linked responses if button is clicked
+	   
+	function results(){
+		var total = pregnancy_count + PMS_count;
+		alert("pregnancy percentage;" + (pregnancy_count/total) * 100 + "/PMS_percentage;" + (PMS_count/total) * 100);
+		var resultText= document.getElementById("results");
+		resultText.innerHTML = "Probability it is pregnancy =" + pregnancyPercentage + "<br> Probability it is PMS =" + PMSPercent;
+			}
 	   
    </script>
 	
